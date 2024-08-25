@@ -9,7 +9,7 @@ load_dotenv()
 google_api_key = os.getenv('google_api_key')
 
 ## Streamlit App
-
+print(f"API Key: {google_api_key}") 
 genai.configure(api_key = google_api_key)
 
 # https://aistudio.google.com/app/u/1/prompts/recipe-creator
